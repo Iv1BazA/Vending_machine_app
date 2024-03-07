@@ -105,12 +105,7 @@ class _NewMachineWindow2State extends State<NewMachineWindow2> {
                             .currentVendingMachine
                             .copyWith(category: categoryName);
                         provider.updateCurrentVendingMachine(updatedMachine);
-                        print(
-                            'New machine: ${provider.currentVendingMachine.name}');
-                        print(
-                            'New machine: ${provider.currentVendingMachine.location}');
-                        print(
-                            'New machine: ${provider.currentVendingMachine.category}');
+
                         Navigator.of(context).pushNamed('/add3');
                       }
                     : null,

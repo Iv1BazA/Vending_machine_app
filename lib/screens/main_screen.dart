@@ -115,7 +115,7 @@ class _YourVendingMachineWidgetState extends State<YourVendingMachineWidget> {
   @override
   void initState() {
     super.initState();
-    print('MainScreenWidget initialized');
+
     Provider.of<VendingMachineProvider>(context, listen: false)
         .loadVendingMachines();
   }

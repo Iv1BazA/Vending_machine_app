@@ -129,8 +129,6 @@ class _NewMachineWindow1State extends State<NewMachineWindow1> {
                                 location: secondTxtController.text,
                               ),
                             );
-                            print(
-                                'Edit machine: ${provider.currentVendingMachine}');
                           } else {
                             provider.updateCurrentVendingMachine(
                               provider.currentVendingMachine.copyWith(
@@ -138,13 +136,6 @@ class _NewMachineWindow1State extends State<NewMachineWindow1> {
                                 location: secondTxtController.text,
                               ),
                             );
-
-                            print(
-                                'New machine: ${provider.currentVendingMachine}');
-                            print(
-                                'New machine: ${provider.currentVendingMachine.name}');
-                            print(
-                                'New machine: ${provider.currentVendingMachine.location}');
                           }
                           Navigator.of(context).pushNamed('/add2');
                         }

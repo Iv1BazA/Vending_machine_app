@@ -44,7 +44,6 @@ class _ProductCardWidgetState extends State<ProductCardWidget> {
                 Spacer(),
                 TextButton(
                     onPressed: () {
-                      // Переход к экрану создания/редактирования с передачей текущей машины
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (context) =>

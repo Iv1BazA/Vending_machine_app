@@ -147,11 +147,7 @@ class _NewMachineWindow3State extends State<NewMachineWindow3> {
                           final price = int.tryParse(secondTxtController.text);
                           String categoryName =
                               provider.periodic[selectedContainerIndex].name;
-                          print('Name: ${firstTxtController.text}');
-                          print('Price: ${secondTxtController.text}');
-                          print('Consumption: ${thirdTxtController.text}');
-                          print(
-                              'Selected Container Index: $selectedContainerIndex');
+
                           // 1. Обновление currentVendingMachine
                           provider.updateCurrentVendingMachine(
                               provider.currentVendingMachine.copyWith(

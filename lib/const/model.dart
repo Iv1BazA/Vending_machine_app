@@ -128,7 +128,7 @@ class VendingMachineProvider extends ChangeNotifier {
   VendingMachine _currentVendingMachine = VendingMachine(
     name: '',
     location: '',
-    category: '', // Обновлено
+    category: '',
     products: '',
     price: 0,
     consumption: '',
@@ -164,8 +164,6 @@ class VendingMachineProvider extends ChangeNotifier {
     _currentCategoryIndex = -1;
 
     notifyListeners();
-    print('Vending Machines Count: ${_vendingMachines.length}');
-    print('Current Vending Machine: $_currentVendingMachine');
   }
 }
 
